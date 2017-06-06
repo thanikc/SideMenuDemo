@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController2: UIViewController {
 
-    @IBAction func toggleMenu(sender: AnyObject) {
-        NSNotificationCenter.defaultCenter().postNotificationName("toggleMenu", object: nil)
+    @IBAction func toggleMenu(_ sender: AnyObject) {
+        NotificationCenter.default.post(name: Notification.Name(rawValue: "toggleMenu"), object: nil)
     }
 
     override func viewDidLoad() {
