@@ -13,8 +13,8 @@ class MenuTableViewController: UITableViewController {
     var sections = OrderedDictionary<String, [String]>()
     
     override func viewDidLoad() {
-        sections.insert([ "item1", "item2", "item3" ], forKey: "Section 1", atIndex: 0)
-        sections.insert([ "itemA", "itemB" ], forKey: "Section 2", atIndex: 1)
+        let _ = sections.insert([ "item1", "item2", "item3" ], forKey: "Section 1", atIndex: 0)
+        let _ = sections.insert([ "itemA", "itemB" ], forKey: "Section 2", atIndex: 1)
 
         super.viewDidLoad()
     }
